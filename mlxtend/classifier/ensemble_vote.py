@@ -33,7 +33,7 @@ class EnsembleVoteClassifier(BaseEstimator, ClassifierMixin, TransformerMixin):
     voting : str, {'hard', 'soft'} (default='hard')
         If 'hard', uses predicted class labels for majority rule voting.
         Else if 'soft', predicts the class label based on the argmax of
-        the sums of the predicted probalities, which is recommended for
+        the sums of the predicted probabilities, which is recommended for
         an ensemble of well-calibrated classifiers.
     weights : array-like, shape = [n_classifiers], optional (default=`None`)
         Sequence of weights (`float` or `int`) to weight the occurances of
